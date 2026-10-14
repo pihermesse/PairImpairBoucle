@@ -15,7 +15,15 @@ class Program
         Console.WriteLine("Choisi un nombre:");
         
         String answer = Console.ReadLine();
-        // Debug
-        Console.WriteLine(answer);
+
+        int number = int.Parse(answer);
+        if (number % 2 == 0)
+        {
+            Console.WriteLine("Le nombre donné est pair");
+        }
+        else
+        {
+            Console.WriteLine("Le nombre donné est impair");
+        }
     }
 }
